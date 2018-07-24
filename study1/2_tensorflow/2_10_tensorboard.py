@@ -28,9 +28,9 @@ with tf.Session() as sess:
     # summary 정보를 파일로 저장
     merged = tf.summary.merge_all()
 
-    for i in range(10):
-        summary, t = sess.run([merged, y], feed_dict={x: i})
-        writer.add_summary(summary, i)
+    # for i in range(10):
+    #     summary, t = sess.run([merged, y], feed_dict={x: i})
+    #     writer.add_summary(summary, i)
 
     writer.close()
 
