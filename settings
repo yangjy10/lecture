@@ -1,21 +1,46 @@
-sudo apt-get install virtualenv
+# Install virtualenv on local pc
+sudo apt install virtualenv
 
-mkdir ~/tensorflow
+#Install python3 in a directory named multicamp
+virtualenv -p python3 ~/multicamp
 
-virtualenv -p python3 ~/tensorflow
+# Activate "multicamp" virtualenv
+source multicamp/bin/activate
 
-pip3 install --upgrade pip
+# Deactivate current virtualenv ("multicamp")
+deactivate
 
-pip3 install ipykernel
-
-python3 -m ipykernel install --user
-
+# Install tensorflow on the current virtualenv
 pip3 install tensorflow
 
-cd Download
+# Install tensorflow on the current virtualenv
+pip3 install matplotlib
 
+# Install Ipython kernel on the current virtualenv
+pip3 install ipykernel
+
+# Install jupyter notebook on the current virtualenv
+pip3 install jupyter
+
+# Add python3 kernel to Jupyter
+python3 -m ipykernel install --user
+
+# Download lecture materials in a directory named ~/Download
+cd Download
 git clone https://github.com/aidentify/lecture
 
+# Run jupyternotebook server on local pc 
 cd lecture
-
 jupyter notebook
+
+
+
+# Install keras
+pip3 install keras
+
+# Install music21
+pip3 install music21
+
+# Install OpenAI lib.
+pip3 install gym
+pip3 install readchar
