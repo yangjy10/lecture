@@ -8,7 +8,7 @@ virtualenv -p python3 ~/multicamp
 source multicamp/bin/activate
 
 # Deactivate current virtualenv ("multicamp")
-deactivate
+#deactivate
 
 # Install tensorflow, matplotlib, ipykernel, jupyter on the current virtualenv
 pip3 install tensorflow matplotlib ipykernel jupyter
