@@ -35,3 +35,6 @@ pip3 install music21
 # Install OpenAI lib.
 pip3 install gym
 pip3 install readchar
+
+# Midi 재생
+https://onlinesequencer.net/import
