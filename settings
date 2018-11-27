@@ -8,10 +8,10 @@ virtualenv -p python3 ~/multicamp
 source multicamp/bin/activate
 
 # Deactivate current virtualenv ("multicamp")
-deactivate
+#deactivate
 
 # Install tensorflow, matplotlib, ipykernel, jupyter on the current virtualenv
-pip3 install tensorflow, matplotlib, ipykernel, jupyter
+pip3 install tensorflow matplotlib ipykernel jupyter
 
 # Add python3 kernel to Jupyter
 python3 -m ipykernel install --user
@@ -35,3 +35,7 @@ pip3 install music21
 # Install OpenAI lib.
 pip3 install gym
 pip3 install readchar
+sudo apt-get install python3-tk
+
+# Midi 재생
+https://onlinesequencer.net/import
