@@ -1,6 +1,6 @@
 import tensorflow as tf
     
-def single_layer_percentorn(input, output_dim=None):
+def single_layer_perceptron(input, output_dim=None):
 
     input_dim = input.shape[1].value
 
@@ -15,7 +15,7 @@ def single_layer_percentorn(input, output_dim=None):
     output = tf.add(tf.matmul(input, weight), bias)
     return output
 
-def _single_layer_percentorn(input, output_dim=10):
+def _single_layer_perceptron(input, output_dim=10):
 
     input_dim = input.shape[1].value
     with tf.name_scope(name="slp"):
