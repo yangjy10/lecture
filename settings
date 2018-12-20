@@ -1,14 +1,15 @@
+#############################################################################
+###-------  Followings are requirements to run 2nd day exercises   -------###
+#############################################################################
+
 # Install virtualenv on local pc
 sudo apt install virtualenv
 
-#Install python3 in a directory named multicamp
+# Install python3 in a directory named multicamp
 virtualenv -p python3 ~/multicamp
 
 # Activate "multicamp" virtualenv
 source multicamp/bin/activate
-
-# Deactivate current virtualenv ("multicamp")
-#deactivate
 
 # Install tensorflow, matplotlib, ipykernel, jupyter on the current virtualenv
 pip3 install --upgrade tensorflow matplotlib ipykernel jupyter
@@ -24,8 +25,14 @@ git clone https://github.com/aidentify/lecture
 cd lecture
 jupyter notebook
 
+#-----------------------------------------------------#
+# [Ref] Deactivate current virtualenv ("multicamp")
+# On terminal, run "deactivate"
+#-----------------------------------------------------#
 
-
+#############################################################################
+###-------  Followings are requirements to run 3th day exercises   -------###
+#############################################################################
 # Install keras
 pip3 install keras
 
@@ -37,5 +44,7 @@ pip3 install gym
 pip3 install readchar
 sudo apt-get install python3-tk
 
-# Midi 재생
-https://onlinesequencer.net/import
+#-----------------------------------------------------#
+# [Ref] Midi 재생
+# https://onlinesequencer.net/import
+#-----------------------------------------------------#
